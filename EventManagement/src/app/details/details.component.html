@@ -1,0 +1,23 @@
+
+<h3 style="margin-top: 30px;">Employee Details</h3>
+<div class="jumbotron">
+    <div>
+        <label> <b> Id: </b></label> {{employee.id}}
+    </div>
+    <div>
+        <label> <b> First Name: </b></label> {{employee.firstName}}
+    </div>
+    <div>
+        <label> <b> Last Name: </b></label> {{employee.lastName}}
+    </div>
+    <div>
+        <label> <b> Email Id: </b></label> {{employee.emailId}}
+    </div>
+    <div>
+        <button (click)="updateEmployee(employee.id)" class="btn btn-primary" style="margin-right: 3px;">Edit</button>
+        <button (click)="deleteEmployee(employee.id)" class="btn btn-danger">Delete</button>
+    </div>
+</div>
+<div style="margin-top:-35px ;">
+    <button (click)="goBack()" class="btn btn-info">Back</button>
+</div>
